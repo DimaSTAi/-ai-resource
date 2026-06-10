@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спасибо! — AI Resource</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="animations.css">
+
+  <style>
+    .thanks-hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .thanks-box {
+      position: relative;
+      z-index: 1;
+      max-width: 560px;
+      padding: 48px 40px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      backdrop-filter: blur(10px);
+    }
+
+    .thanks-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .thanks-box h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .thanks-box p {
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+      font-size: 1.05rem;
+    }
+
+    .thanks-box .btn {
+      display: inline-flex;
+    }
+
+    .hero-laptop {
+      opacity: 0.15;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thanks-hero">
+    <div id="tsparticles"></div>
+    <div class="hero-laptop">
+      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <g class="laptop-body">
+          <rect x="60" y="20" width="280" height="180" rx="12" fill="#1A1A2E" stroke="#6C63FF" stroke-width="2"/>
+          <rect x="70" y="30" width="260" height="160" rx="6" fill="#0A0A0F"/>
+          <line x1="85" y1="55" x2="200" y2="55" stroke="#00D4FF" stroke-width="2" opacity="0.6"/>
+          <line x1="85" y1="75" x2="180" y2="75" stroke="#6C63FF" stroke-width="2" opacity="0.6"/>
+          <line x1="85" y1="95" x2="220" y2="95" stroke="#FF6B6B" stroke-width="2" opacity="0.6"/>
+          <rect x="140" y="200" width="120" height="8" rx="4" fill="#2A2A3E"/>
+          <rect x="40" y="208" width="320" height="60" rx="8" fill="#1A1A2E" stroke="#6C63FF" stroke-width="1" opacity="0.5"/>
+          <rect x="150" y="210" width="100" height="3" rx="1.5" fill="#00D4FF" opacity="0.5"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="thanks-box">
+      <div class="thanks-icon">🎉</div>
+      <h1>Спасибо за заявку!</h1>
+      <p>Мы получили ваше сообщение и свяжемся с вами в течение 1 часа. Пока можно вернуться на сайт или написать нам напрямую в Telegram.</p>
+      <a href="index.html" class="btn btn-primary">← Вернуться на сайт</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
